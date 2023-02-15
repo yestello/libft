@@ -6,7 +6,7 @@
 /*   By: yestello <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/09 15:37:24 by yestello          #+#    #+#             */
-/*   Updated: 2023/02/10 10:55:46 by yestello         ###   ########.fr       */
+/*   Updated: 2023/02/15 18:22:59 by yestello         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-
+/*
 int	main(void)
 {
 	char	str[] = "salut a tous";
@@ -42,4 +42,4 @@ int	main(void)
 	len = 12;
 	printf("%s", ft_strnstr(str, find, len));
 	return (0);
-}
+}*/
