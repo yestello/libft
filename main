@@ -1,0 +1,54 @@
+ft_strlcpy
+int main(void)
+{
+        char dst[30];
+        const char *src = "Hello, World!";
+        size_t size = sizeof(dst);
+
+        printf("src = %s\n", src);
+        printf("size = %ld\n", size);
+
+        size_t len = ft_strlcpy(dst, src, size);
+
+        printf("After: dst = %s\n", dst);
+        printf("len = %ld\n", len);
+
+        return 0;
+}
+
+ft_memset
+int     main(void)
+{
+        char    str[] = "jai besoin dun parasol";
+        char    *lire;
+        ft_memset(str, 'e', 5);
+        lire = str;
+        printf("%s", lire);
+}
+
+ft_bzero
+int     main(void)
+{
+        char    str[] = "bande de trompette";
+        char    *y;
+        ft_bzero(str, 5);
+        y = str;
+        printf("%s", y + 5);
+}
+
+ft_strchr
+
+int main(void)
+{
+        const char *str = "Hello, World!";
+        char c = 'e';
+        char *ptr;
+
+        ptr = ft_strchr(str, c);
+        if (ptr)
+                printf("The character '%c' was found in the string.\n", c);
+        else
+                printf("The character '%c' was not found in the string.\n", c);
+        return (0);
+}
+ 
